@@ -1,0 +1,113 @@
+:root{
+  --red: #e50914;
+  --black: #141414
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--black);
+  font-family: "Arial", times, serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo{
+  margin-left: 5px;
+  color: var(--red);
+  font-family: "arial black";
+  font-size: 40px;
+}
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+header nav a:hover{
+  color: #fff
+}
+.container{
+  padding: 8px 32px;
+}
+/* main movie */
+.main-movie{
+  height: 600px;
+  width: 100vw;
+  font-size: 16px;
+  background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../img/capa.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-movie .description{
+  margin-bottom: 50px;
+  max-width: 650px;
+  margin-top: 16px;
+}
+.main-movie .container{
+  width: 70%;
+}
+.title{
+  margin-top: 15%;
+  font-size: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.buttons{
+  width: fit-content;
+}
+.button{
+  background-color: rgba(0,0,0,.3);
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  margin-right: 16px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .16s ease all;
+}
+.button:hover{
+  background-color: #fff;
+  color: #000;
+}
+.button i{
+  margin-right: 4px;
+}
+.carousel-movies{
+  padding: 8px;
+}
+.carousel-movies .title{
+  margin: 8px 0;
+  border-bottom: 2px solid #fff;
+  width: fit-content;
+}
+.item{
+  transition: 0.16s ease all;
+  cursor: pointer;
+}
+.item:hover{
+  transform: scale(1.1) rotateZ(1deg);
+}
+footer{
+  background-color: rgba(0,0,0,.3);
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+}
+footer p{
+  font-size: 12px;
+  color: var(--red);
+}
+footer span{
+  color: #e0e0e0;
+  font-weight: 600;
+}
